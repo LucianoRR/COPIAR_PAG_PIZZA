@@ -1,94 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    
+    <style>
+        .card {
+            height: 600px;
+            width: 500px;
+            background-color: white;
+            border: 3px solid black;
+            text-align: center;
 
-.card{
-    height: 600px;
-    width: 500px;
-    background-color: white;
-    border: 3px solid black;
-    text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+        }
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-}
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
 
-.flex-container{
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    justify-content: center;
-    align-content: center;
-}
+            justify-content: center;
+            align-content: center;
+            margin-top: 80px;
+        }
 
 
-.col{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  background-color: rebeccapurple;
-  height: 90px;
-  margin-top: 10px
-}
+        .Topping {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            background-color: rebeccapurple;
+            height: 90px;
+            margin-top: 10px
+        }
 
+        .col1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            background-color: rebeccapurple;
+            height: 90px;
+            margin-top: 10px
+        }
 
+        body {
+            background-image: url(/ASSETS/pizza.jpg);
+        }
+    </style>
 
-.col1{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  background-color: rebeccapurple;
-  border: solid black 3px;
-  height: 90px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-</style>
 </head>
 
 <body>
-<div class="flex-container">
-    <div class="card">
-        <h1>Toppings de Pizza</h1>
+    <div class="flex-container">
+        <div class="card">
+            <h1>Toppings de Pizza</h1>
             <div class="col1">
-            1 of 2
+                <p id=seleccion-contenedor>NADA</p>
             </div>
-            <div class="container">
-            <div class="col">
-            1 of 2
+            <div class="Topping">
+                <p>das</p>
             </div>
-            <div class="col">
-             2 of 2
+            <div class="Topping">
+                <p>res </p>
             </div>
-            <div class="col">
-            1 of 3
+            <div class="Topping">
+                <p>les </p>
             </div>
-            <div class="col">
-            2 of 3
+            <div class="Topping">
+                <p>tan </p>
             </div>
+
+        </div>
     </div>
-</div>
 
-
-
-
-
-
-
-
+    <script src="o.js"></script>
 
 </body>
+
 </html>
